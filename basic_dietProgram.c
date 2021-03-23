@@ -23,7 +23,7 @@ const char* drinks[] = {"Meyve Suyu","Ayran","Sut","Limonata"};
 void homeScreen(){
     
 	printf("\t\t******************************************************************************************************");	
-	printf("\n\n\t\t\t\t\t   ---> WELCOME TO DİET PROGRAM <---\n\n\t\t\t\t\t\n\n");
+	printf("\n\n\t\t\t\t\t   ---> WELCOME TO DIET PROGRAM <---\n\n\t\t\t\t\t\n\n");
 	printf("\n\t\t******************************************************************************************************");
 	printf("\n\n\t\t\t\t\t\t | created by CIHAT ASIR |");
 }
@@ -107,7 +107,7 @@ int getRudiments(struct rudiments *informationPtr)
 	
 	
 	
-	printf("\n\n\t\t\t\t\t\t  Processing information into the system...\n");
+	printf("\n\n\t\t\t\t\t   Processing information into the system...\n");
 	sleep(1);
 	printf("\n\n\t\t\t\t********************");
 	sleep(1);		                  	
@@ -155,7 +155,7 @@ void whIndex(struct indexResult *indexPtr)
             if(index > 1.00 && index <= 18.5)
             {
                 system("cls");
-				printf("\n\n\t\t\t\t\t\tYour index result: Weak\n");
+				printf("\n\n\t\t\t\t\t\t    Your index result: Weak\n");
 				strcpy(indexPtr->index,"weak");                      				
 				break;                
             }
@@ -163,7 +163,7 @@ void whIndex(struct indexResult *indexPtr)
             else if(index >18.5 && index <= 24.9)
             {
                 system("cls");
-				printf("\n\n\t\t\t\t\t\tYour index result: Normal");
+				printf("\n\n\t\t\t\t\t\t    Your index result: Normal");
                	strcpy(indexPtr->index,"normal");  
 				break;
                     
@@ -172,7 +172,7 @@ void whIndex(struct indexResult *indexPtr)
             else if(index > 24.9)
             {
                 system("cls");
-				printf("\n\n\t\t\t\t\t\t Your index result: Pounds");
+				printf("\n\n\t\t\t\t\t\t    Your index result: Pounds");
                 strcpy(indexPtr->index,"pounds");  
 				break;              
             }
@@ -236,13 +236,13 @@ void showBasicInfo(struct rudiments *informationPtr,struct indexResult *indexPtr
 	
 	system("cls");
 	
-	printf("\n\n\n\t\t\t\t\t      YOUR DIET LIST HAS BEEN SUCCESSFULLY CREATED !");
+	printf("\n\n\n\t\t\t\t\t   YOUR DIET LIST HAS BEEN SUCCESSFULLY CREATED !");
 	printf("\n\n\t\t\t\t\t\t YOUR INFORMATION IS AS FOLLOWS.\n\n");
 	printf("\t\t\t          ---------------------------------------------------------\n\n");
 	printf("\n\n\t\t\t\t\t\tNAME: %s\n\n",informationPtr->name);
 	printf("\t\t\t\t\t\tSURNAME: %s\n\n",informationPtr->surname);
 	printf("\t\t\t\t\t\tAGE: %d\n\n",informationPtr->age);
-	printf("\t\t\t\t\t\tH: %d cm\n\n",indexPtr->heights);
+	printf("\t\t\t\t\t\tHEIGHT: %d cm\n\n",indexPtr->heights);
 	printf("\t\t\t\t\t\tWEIGHT: %d kg\n\n",indexPtr->weights);
 }
 
