@@ -1,6 +1,6 @@
 # Making Diet List With C
  
-# Install
+## Install
 ```
 git clone https://github.com/cihatasir/c-dietList.git
 ```
