@@ -2,5 +2,5 @@
  
 ## Install
 ```
-git clone https://github.com/cihatasir/c-dietList.git
+git clone https://github.com/cihatasir/DietList_Creator.git
 ```
